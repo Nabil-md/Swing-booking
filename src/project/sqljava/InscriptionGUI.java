@@ -60,19 +60,19 @@ public class InscriptionGUI implements ActionListener{
 		
 		cinLabel = new JLabel("CIN");
 		cinLabel.setBounds(10,20,80,25);
-		cinLabel.setFont(new Font("Times New Roman", Font.PLAIN, 46));
+		cinLabel.setFont(new Font("Times New Roman", Font.PLAIN, 30));
 		
 		userLabel = new JLabel("username");
 		userLabel.setBounds(10,20,80,25);
-		userLabel.setFont(new Font("Times New Roman", Font.PLAIN, 46));
+		userLabel.setFont(new Font("Times New Roman", Font.PLAIN, 30));
 		
 		passwordLabel = new JLabel("password");
 		passwordLabel.setBounds(10,20,80,25);
-		passwordLabel.setFont(new Font("Times New Roman", Font.PLAIN, 46));
+		passwordLabel.setFont(new Font("Times New Roman", Font.PLAIN, 30));
 		
 		emailLabel = new JLabel("email");
 		emailLabel.setBounds(10,20,80,25);
-		emailLabel.setFont(new Font("Times New Roman", Font.PLAIN, 46));
+		emailLabel.setFont(new Font("Times New Roman", Font.PLAIN, 30));
 		
 		// CIN text input
 		cinText = new JTextField(20);
@@ -159,7 +159,7 @@ public class InscriptionGUI implements ActionListener{
 			statement.close();
 			connection.close();
 			
-			new alertGUI("Votre compte a été créé avec succès");
+			new AlertGUI("Votre compte a été créé avec succès");
 			inscriptionFrame.dispose();
 			
 		} catch (SQLException e) {

@@ -41,14 +41,14 @@ public class ReservationGUI implements ListSelectionListener, ActionListener{
 		
 		cinReserve = cin;
 		
-		System.out.println(cin + " this the inscription page");
+		System.out.println(cin + " this is the inscription page");
 		reservationFrame = new JFrame();
 		
 		reservationLabel = new JLabel("Page de réservation");
 		reservationLabel.setFont(new Font("Times New Roman", Font.PLAIN, 46));
 		
 		reservationListLabel = new JLabel("Veuillez sélectionner une réservation");
-		reservationListLabel.setFont(new Font("Times New Roman", Font.PLAIN, 46));
+		reservationListLabel.setFont(new Font("Times New Roman", Font.PLAIN, 35));
 		
 		String url = "jdbc:mysql://localhost:3306/centre";
 		String username = "root";
@@ -156,7 +156,7 @@ public class ReservationGUI implements ListSelectionListener, ActionListener{
 		}
 		
 		
-		new alertGUI("Votre réservation a été effectuée");
+		new AlertGUI("Votre réservation a été effectuée");
 		reservationFrame.dispose();
 	}
 

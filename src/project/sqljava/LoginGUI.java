@@ -42,9 +42,9 @@ public class LoginGUI implements ActionListener{
 	loginLabel.setFont(new Font("Times New Roman", Font.PLAIN, 46));
 	
 	loginUserLabel = new JLabel("Username");
-	loginUserLabel.setFont(new Font("Times New Roman", Font.PLAIN, 46));
+	loginUserLabel.setFont(new Font("Times New Roman", Font.PLAIN, 30));
 	loginPasswordLabel = new JLabel("Password");
-	loginPasswordLabel.setFont(new Font("Times New Roman", Font.PLAIN, 46));
+	loginPasswordLabel.setFont(new Font("Times New Roman", Font.PLAIN, 30));
 	
 	loginUsernameText = new JTextField();
 	loginPasswordText =  new JPasswordField();
@@ -118,7 +118,7 @@ public class LoginGUI implements ActionListener{
 			e.printStackTrace();
 		}
 		
-		new alertGUI("vous vous êtes connecté avec succès");
+		new AlertGUI("vous vous êtes connecté avec succès");
 		loginFrame.dispose();
 		
 	}

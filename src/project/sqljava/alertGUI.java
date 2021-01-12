@@ -11,7 +11,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class alertGUI implements ActionListener{
+public class AlertGUI implements ActionListener{
 	
 	
 	private JLabel alertLabel;
@@ -25,7 +25,7 @@ public class alertGUI implements ActionListener{
 	
 	
 	
-	public alertGUI(String message) {
+	public AlertGUI(String message) {
 		
 		
 		alertLabel = new JLabel(message);
@@ -55,7 +55,7 @@ public class alertGUI implements ActionListener{
 	
 
 	public static void main(String[] args) {
-		new alertGUI("hi");
+		new AlertGUI("hi");
 
 	}
 
